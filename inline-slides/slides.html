@@ -1,3 +1,6 @@
 <section>
-  <pre><code>class Bicycle&#x000A;  attr_reader :size, :parts&#x000A;&#x000A;  def initialize(args={})&#x000A;    @size       = args[:size]&#x000A;    @parts      = args[:parts]&#x000A;  end&#x000A;&#x000A;  def spares&#x000A;    parts.spares&#x000A;  end&#x000A;end</code></pre>
+  <pre><code>class Wheel&#x000A;&#x000A;  attr_reader :rim, :tire&#x000A;&#x000A;  def initialize(args={})&#x000A;    @rim  = args[:rim]&#x000A;    @tire = args[:tire]&#x000A;  end&#x000A;&#x000A;  def diameter&#x000A;    rim + (tire * 2)&#x000A;  end&#x000A;&#x000A;end</code></pre>
+</section>
+<section>
+  <pre><code>class Bicycle&#x000A;  attr_reader :size, :parts&#x000A;&#x000A;  def initialize(args={})&#x000A;    @size  = args[:size]&#x000A;    @parts = args[:parts]&#x000A;  end&#x000A;&#x000A;  def spares&#x000A;    parts.spares&#x000A;  end&#x000A;end</code></pre>
 </section>
